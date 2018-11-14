@@ -33,7 +33,7 @@ public class Webhooktest {
 	// @Scheduled(cron = "0 * * * * ?")
 	@RequestMapping("/webhook")
 	public String test(RequestData data) {
-		System.out.println("New webhook COMPONENT");
+		System.out.println("New webhook COMPONENT...");
 		String inputdata = data.getData();
 		JSONObject inputJson = new JSONObject(inputdata);
 		String serviceName = inputJson.getString("serviceName");
